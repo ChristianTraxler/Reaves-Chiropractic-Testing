@@ -107,7 +107,7 @@
     font-size: 0.8125rem;
     font-weight: 600;
     font-family: "Hind", sans-serif;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin-right: var(--size-50);
     line-height: var(--size-20);
 }
@@ -230,19 +230,19 @@ ul.breadcrumb > .not-active > a { color: gray; }
     position: relative;
     top: 50px;
     background-color: #2f8d46;
-    background-image: url("assets/img/wallpaper.jpg");
+    background-image: image("assets/img/wallpaper.jpg");
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /*margin-top: 200px;*/
-    /*font-size: 120px;*/
+    font-size: var(--size-40);
     text-align: center;
-    font-weight: bold;
     /*text-transform: uppercase;*/
     font-family: 'Steelfish Rg', 'helvetica neue',
     helvetica, arial, sans-serif;
     font-weight: 800;
     -webkit-font-smoothing: antialiased;
+    padding-bottom: 50px;
 }
 
 .cards-wrapper {
@@ -331,3 +331,32 @@ img[src*="Planes17"] {
     /*width: 100%;*/
     font-weight: 600;
 }
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Start of Footer section */
+
+
+.icons {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding-right: var(--size-10);
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px; }
+
+.developer {
+    position: relative;
+    right: 12px;
+    text-decoration: none;
+    color: #FF4500;
+}
+
+.copyright p { color: var(--white); }
