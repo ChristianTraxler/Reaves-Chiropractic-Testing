@@ -339,6 +339,12 @@ img[src*="Planes17"] {
 
 /* Start of Footer section */
 
+.bg-footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
 
 .icons {
     display: inline-block;
