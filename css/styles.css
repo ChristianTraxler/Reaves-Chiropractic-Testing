@@ -303,7 +303,7 @@ img[src*="IMG_6736"] {
 }
 
 img[src*="Planes17"] {
-    
+
 }
 
 
@@ -328,6 +328,6 @@ img[src*="Planes17"] {
     padding-left: 20px;
     bottom: 70px;
     font-size: var(--size-18);
-    width: 100%;
+    /*width: 100%;*/
     font-weight: 600;
 }
