@@ -359,4 +359,12 @@ img[src*="Planes17"] {
     color: #FF4500;
 }
 
-.copyright p { color: var(--white); }
+/*.copyright p { color: var(--white); }*/
+
+img[src*="DOC"] {
+    display: initial;
+    position: relative;
+    width: 4%;
+    right: 4px;
+    bottom: 1px;
+}
