@@ -219,3 +219,115 @@ ul.breadcrumb > .not-active > a { color: gray; }
 /* End of Navbar */
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Start of Cards Section */
+
+.cards-section {
+    background-color: var(--white);
+}
+
+.get-started {
+    position: relative;
+    top: 50px;
+    background-color: #2f8d46;
+    background-image: url("assets/img/wallpaper.jpg");
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*margin-top: 200px;*/
+    /*font-size: 120px;*/
+    text-align: center;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+    font-family: 'Steelfish Rg', 'helvetica neue',
+    helvetica, arial, sans-serif;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+}
+
+.cards-wrapper {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 30px;
+}
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    padding-top: 60px;
+}
+
+.card {
+    margin: 0 auto;
+    /*padding: 15px 10px 0 10px;*/
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.card-container {
+    width: 100%;
+    /*padding: 18px 20px 10px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dr\.reaves {
+    position: relative;
+    /*top: 25px;*/
+    object-fit: none;
+    /*width: 200px;*/
+    height: 300px;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.card > img {
+    border-radius: 10px;
+}
+
+.dr {
+    position: absolute;
+    padding-left: 20px;
+    bottom: 550px;
+    font-size: var(--size-25);
+    width: 160px;
+}
+
+img[src*="IMG_6736"] {
+    width: 50%;
+    object-fit: none;
+}
+
+img[src*="Planes17"] {
+    
+}
+
+
+.main-product-card {
+    position: absolute;
+    padding-left: 20px;
+    bottom: 210px;
+    font-size: var(--size-25);
+    width: 160px;
+}
+
+.main-entry-form-card {
+    position: absolute;
+    padding-left: 20px;
+    bottom: 170px;
+    font-size: var(--size-25);
+    width: 160px;
+}
+
+.fillable {
+    position: absolute;
+    padding-left: 20px;
+    bottom: 70px;
+    font-size: var(--size-18);
+    width: 100%;
+    font-weight: 600;
+}
