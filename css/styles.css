@@ -1,0 +1,197 @@
+/* Start of Navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 500;
+    transition: ease-in-out 0.3s;
+}
+
+.navbar.sticky {
+    background: var(--white);
+    box-shadow: 0 0 20px rgb(48 63 100 / 20%);
+}
+
+.navbar.sticky .navbar-toggler span, .navbar.sticky .navbar-brand, .rwc-logo2 {
+    color: var(--font-color-dark);
+    padding-bottom: var(--size-10);
+}
+
+.navbar.sticky .nav-link a { color: var(--font-color-dark); }
+
+.navbar-toggler {
+    position: absolute;
+    right: var(--size-20);
+    top: var(--size-10);
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.navbar-toggler span {
+    color: var(--white);
+    font-size: var(--size-20);
+    cursor: pointer;
+    pointer-events: none;
+}
+
+[aria-controls="navbarDropdown"] { display: none; }
+
+.nb-logo, .nb-logo2 { height: 70px; }
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    transition: ease-in-out 0.3s;
+    margin-left: auto;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 100%;
+    transition: ease-in-out 0.3s;
+    color: var(--white);
+    text-align: left;
+}
+
+.bg-header, .video-demo {
+    background-color: var(--footer);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%;
+    position: relative;
+    z-index: 1;
+    /*padding: 3.5rem 0;*/
+}
+
+.bg-header {
+    /*background-image: url("../assets/images/FA98204A-ADB6-46EE-A58B-77C8A6C437F5.jpeg");*/
+}
+
+/*.video-demo { background-image: url("../assets/images/bg-demo.jpg");}*/
+
+.bg-header::before {
+    background-image: linear-gradient(
+            30deg,
+            rgba(21, 27, 38, 0.8) 0%,
+            rgba(0, 0, 0, 0.2) 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    content: "";
+}
+
+.nav-link {
+    position: relative;
+    left: 25px;
+}
+
+.nav-link a {
+    display: flex;
+    color: var(--white);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    font-family: "Hind", sans-serif;
+    text-transform: uppercase;
+    margin-right: var(--size-50);
+    line-height: var(--size-20);
+}
+
+.hero-header {
+    position: fixed;
+    color: var(--white);
+    text-align: center;
+}
+
+.rc-logo {
+    display: flex;
+    position: relative;
+    width: 15%;
+}
+
+/*.icons1 {*/
+/*    position: relative;*/
+/*    right: 6px;*/
+/*    bottom: 2px;*/
+/*    color: white;*/
+/*    width: 18px;*/
+/*    height: 20px;*/
+/*}*/
+
+/*.icons2 {*/
+/*    position: relative;*/
+/*    right: 6px;*/
+/*    bottom: 2px;*/
+/*    width: 14px;*/
+/*}*/
+
+/*.icons3 {*/
+/*    position: relative;*/
+/*    right: 6px;*/
+/*    width: 17px;*/
+/*}*/
+
+/*.icons4 {*/
+/*    position: relative;*/
+/*    right: 6px;*/
+/*    bottom: 1px;*/
+/*    width: 17px;*/
+/*}*/
+
+div > .navbar-nav { top: 0; }
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+    justify-content: initial;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+    margin-right: initial;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+ul.breadcrumb > .not-active > a { color: gray; }
+
+/* End of Navbar */
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
